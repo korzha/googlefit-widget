@@ -14,7 +14,6 @@
         <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
         <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
         <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
-        <!--<action android:name="android.appwidget.action.APPWIDGET_DELETED" />-->
       </intent-filter>
 
       <meta-data
@@ -22,12 +21,9 @@
         android:resource="@xml/app_widget_info" />
     </receiver>
 
-    <service android:name=".AppWidget$WidgetUpdateService" />
-<!--
-    <service
-      android:name=".AppWidget$UpdateJob"
-      android:permission="android.permission.BIND_JOB_SERVICE" />
--->
+    <receiver
+      android:name=".AppWidget$AlarmReceiver"
+      android:enabled="true"/>
 
     <activity android:name=".MainActivity">
       <intent-filter>
