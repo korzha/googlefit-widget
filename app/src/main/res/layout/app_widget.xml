@@ -1,0 +1,60 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/widget_container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="8dp"
+  android:background="@android:color/transparent"
+  android:layout_margin="0dp"
+  android:layout_gravity="center"
+  android:orientation="horizontal"
+  android:columnCount="3">
+
+  <TextView
+    android:id="@+id/steps_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_steps"
+    android:drawableStart="@drawable/ic_steps"
+    android:contentDescription="@string/appwidget_text"
+    android:text="0"
+    android:textColor="#ffffff"
+    android:textSize="24sp"
+    android:textStyle="normal"
+    android:layout_gravity="start|center_vertical"
+    android:layout_columnWeight="0" />
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill_horizontal|center_vertical"
+    android:layout_columnWeight="1">
+
+    <TextView
+      android:id="@+id/energy_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableLeft="@drawable/ic_energy"
+      android:drawableStart="@drawable/ic_energy"
+      android:contentDescription="@string/appwidget_text"
+      android:text="0"
+      android:textColor="#ffffff"
+      android:textSize="24sp"
+      android:textStyle="normal"
+      android:layout_centerInParent="true" />
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/distance_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_distance"
+    android:drawableStart="@drawable/ic_distance"
+    android:contentDescription="@string/appwidget_text"
+    android:text="0"
+    android:textColor="#ffffff"
+    android:textSize="24sp"
+    android:textStyle="normal"
+    android:layout_gravity="end|center_vertical"
+    android:layout_columnWeight="0" />
+
+</GridLayout>

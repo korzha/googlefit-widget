@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">GoogleFitWidget</string>
+  <string name="appwidget_text">Google Fit tracking widget</string>
+  <string name="add_widget">Add widget</string>
+</resources>
